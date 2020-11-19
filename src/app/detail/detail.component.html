@@ -1,0 +1,94 @@
+<div class="container" *ngIf="pokemon">
+<div class="buttons">
+    <div class="NextButton">
+        <a href="/details/{{BeforePokemon.id}}">{{BeforePokemon.name}} #{{BeforePokemon.id}}</a>
+    </div>
+    <div class="NextButton">
+        <a href="/details/{{NextPokemon.id}}">{{NextPokemon.name}} #{{NextPokemon.id}}</a>
+    </div>
+</div>
+    
+    <div class="pokemonDetail">
+        <div class="left">
+            <div class="img" >
+                <img src="{{pokemon.img}}" style="overflow: hidden;"  height="390px" >
+            </div>
+            <div class="img" id="attackInfo">
+                <ul class="det" >
+                    <h3>Candy</h3>
+                    <li>{{pokemon.candy}}<br></li>
+                    
+                    <h3>Candy Count</h3>
+                    
+                    <li>{{pokemon.candy_count}}
+                    </li>
+                </ul>
+                <ul class="det">
+                    <h3>Egg</h3>
+                    <li>{{pokemon.egg}} <br></li>
+                    <h3>Spawn Chance</h3>
+                    <li>{{pokemon.spawn_chance}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="details">
+            <h1 style="text-align: center;">{{pokemon.name}}</h1>
+        <h4 style="width: 100%; " > This is the explanation of each pokemons.This places will be filled with some information.
+            But now, it will be wait. Thank you so much. Will be soon!!</h4>
+        <div class="info" >
+            <div class="Info" >
+                
+                <ul class="det" >
+                    <h3>Height</h3>
+                    <li>{{pokemon.height}}<br></li>
+                    
+                    <h3>Weight</h3>
+                    
+                    <li>{{pokemon.weight}}
+                    </li>
+                </ul>
+                
+                <ul class="det">
+                    <h3>Spawn Time</h3>
+                    <li>{{pokemon.spawn_time}} sec.<br></li>
+                    <h3>Average Spawn</h3>
+                    <li>{{pokemon.avg_spawns}}</li>
+                </ul>
+            </div>
+
+            <h2 style="text-align: left;">Types</h2>
+
+            <div class="types">
+
+                <div class="type" id="{{type}}" *ngFor="let type of pokemon.type">
+                    
+                    <a>{{type}}</a>
+                </div>
+            </div>
+
+            <h2 style="text-align: left;">Weaknesses</h2>
+
+            <div class="types">
+
+                <div class="type" id="{{type}}" *ngFor="let type of pokemon.weaknesses">
+                    
+                    <a>{{type}}</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div *ngIf="generations" class = "generations" style="text-align: center; background-image: url(assets/body_bg.png); width: 70%; margin-left: 15%; border-radius: 40px;">
+       <h1>Generations</h1>
+        <ul style="display: inline-block; margin-top: 10px;" *ngFor="let item of generations">
+           <li >
+               <div style="width: 200px; background-color: #2f3640; border-radius: 180px;">
+                <img src="{{item.img}}" alt="">
+            </div>
+            <a style="font-size: 35px; color: white" href="/details/{{item.id}}">{{item.name}}</a>  
+            </li>
+        </ul>
+    </div>
+</div>

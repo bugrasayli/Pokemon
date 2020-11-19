@@ -1,0 +1,178 @@
+.container{
+    width: 1300px;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-bottom: 1%;
+    background:rgb(247, 244, 244);
+    border-radius: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 120px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pokemonDetail{
+    width: 100%;
+    overflow: hidden;
+    justify-self: start;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 40px;
+}
+.generations{
+    text-align: center; 
+    overflow: hidden;
+    margin-bottom: 40px;
+    color: white;
+    background-image: url(/assets/body_bg.png); 
+    width: 70%; 
+    margin-left: 15%; 
+    margin-top: 100px;
+    border-radius: 40px;
+}
+.generations h1{
+    text-align: center;
+    font :white;
+}
+.left{
+    display: inline-block
+}
+.img{
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: #2f3640;
+    text-align:center;
+    width: 500px;
+    height: 40%;
+    margin-left: 40px;
+}
+#attackInfo
+{
+    margin-top: 38px;
+    
+}
+.details{
+    vertical-align: top;
+    position: relative;
+    justify-items: center;
+    display: inline-block;
+    border-radius: 40px;
+    background-color: #2f3640;
+    padding-left:20px;
+    padding-right:20px;
+    margin-left: 5%;
+    width: 50%;
+    color: white;
+    height: 600px;
+    text-align: left;
+}
+.details h4{
+    font-size: 18px;
+}
+li{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.det{
+    display: inline-block;
+    padding-right: 0px;
+    color: white;
+    vertical-align: top;;;
+}
+.Info
+{
+    background-color: rgb(48,167,215);
+    border-radius: 40px;
+    margin-top: 30px;
+}
+.types{
+    vertical-align: middle;
+}
+.type{
+    border-style: solid,red;
+    background-color: red;
+    border-radius: 20px;
+    width: 30%;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+a{
+    width: 100px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#Poison{
+    background-color: rgb(185, 121,201);
+}
+#Grass{
+    background-color:  rgb(155,204,80);
+}
+#Fire{
+    background-color: rgb(253,125,36);
+}
+#Water{
+    background-color: rgb(69,146,196);
+}
+#Bug{
+    background-color: rgb(114,159,63);
+}
+#Ground{
+    background-color: rgb(171,152,66);
+}
+#Psychic{
+    background-color: rgb(243,102,185);
+}
+#Flying{
+    background-color: rgb(61,199,239);
+}
+#Normal{
+    background-color: rgb(255,255,255);
+}
+#Rock{
+    background-color:rgb(163,140,33);
+}
+#Dragon{
+    background-color:rgb(241,110,87);
+}
+
+#Ghost{
+    background-color:rgb(123,98,163);
+}
+#Dark{
+    background-color:rgb(112,112,112);
+}
+#Ice{
+    background-color:rgb(81,196,231);
+}
+#Fairy{
+    background-color:rgb(253,185,233);
+}
+.buttons{
+    margin-top: 20px;
+}
+.NextButton{
+    width: 40%;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 0px;
+    background-color: rgb(227,227,227);
+    border-radius: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.NextButton a{  
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.NextButton:hover{
+background-color: rgb(200,200,200);;
+}
+
+
+

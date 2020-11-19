@@ -1,0 +1,171 @@
+.ContainerList{
+    text-align: center;
+    top: 200px;
+    width: 100%;
+    padding-left:10%;
+    padding-right:10%;
+    padding-top: 10px;
+}
+.item{
+    width: 200px;
+    margin-top:50px;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 40px;
+    height: 350px;
+    display: inline-block;
+    background: #2f3640;
+    border-radius: 40px;
+    }
+h2,h3{
+    color: white;
+    margin-top: 30px;
+}
+h4{
+    color: rgb(145,145,173);
+}
+.type{
+    border-style: solid,red;
+    background-color: red;
+    border-radius: 20px;
+    width: 80px;
+    display: inline-block;
+    margin-left: 2px;
+}
+a{
+    width: 50px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#Poison{
+    background-color: rgb(185, 121,201);
+}
+#Grass{
+    background-color:  rgb(155,204,80);
+}
+#Fire{
+    background-color: rgb(253,125,36);
+}
+#Water{
+    background-color: rgb(69,146,196);
+}
+#Bug{
+    background-color: rgb(114,159,63);
+}
+#Ground{
+    background-color: rgb(171,152,66);
+}
+#Dragon{
+    background-color:rgb(241,110,87);
+}
+#Psychic{
+    background-color: rgb(243,102,185);
+}
+#Flying{
+    background-color: rgb(61,199,239);
+}
+#Normal{
+    background-color: rgb(255,255,255);
+}
+#Ghost{
+    background-color:rgb(123,98,163);
+}
+#Dark{
+    background-color:rgb(112,112,112);
+}
+#Ice{
+    background-color:rgb(81,196,231);
+}
+#Fairy{
+    background-color:rgb(253,185,233);
+}
+#Rock{
+    background-color:rgb(163,140,33);
+}
+.sort{
+    margin-top: -260px;
+    margin-bottom: 20px;
+    background-position-y: absolute;
+}
+.custom-select{
+  position: relative;
+  display: block;
+  max-width: 400px;
+  min-width: 180px;
+  margin: 0 auto;
+  border: 1px solid #3C1C78;
+  background-color: #16013E;
+  z-index: 10;
+}
+  select{
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    padding: 12px 55px 15px 15px;
+    font-size: 14px;
+    color: #2f3640;
+}
+.container{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    width: 1300px;
+    margin-bottom: 10px;
+    padding-bottom: 1%;
+    background:rgb(247, 244, 244);
+    border-radius: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 120px;
+}
+.end{
+    padding-left: 1050px;
+}
+.pages
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center; 
+    background-color: white;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.pages a{
+    font-size:30px;
+    text-decoration: none;
+}
+
+
+
+.custom
+{
+    display: inline-block;
+    margin-top: 40px;
+    width: 100%;
+}
+option{
+    border-radius: 40px;
+}
+
+.input{
+    display: inline-block;
+    text-align: left;
+    margin-left: 17%;
+    position: relative;
+    border-radius: 40px; 
+    width: 25%; 
+    height: 50px; 
+    background-color:#2f3640; 
+    color: white;
+}

@@ -1,0 +1,38 @@
+<app-search (messageEvent)="ReceiveMessage($event)"></app-search>
+
+<div class="container">
+    <div class="custom">
+        <button class="input" type="submit" value="Random" (click)="Random()">
+            RANDOM
+        </button>
+
+
+        <select class="input" id="sort" (change)="onEditClick($event.target.value)">
+            <option value="-1" selected="true">Choose sort</option>
+            <option value="0">ID-Low to High</option>
+            <option value="1">ID-High to Low</option>
+            <option value="2">Alphabetic-Low to Hig</option>
+            <option value="3">Alphabetic-High to Low</option>
+        </select>
+    </div>
+
+    <div class="ContainerList" *ngIf="pokemons">
+        <div class="item" style="overflow: hidden;" *ngFor="let pokemon of pokemons">
+            <img src="{{pokemon.img}}" style="margin-top: 20px;" alt="{{pokemon.name}}" width="150px">
+            <h4>#{{pokemon.id}}</h4>
+            <a style="font-size: 30px; color: white;" href="/details/{{pokemon.id}}">{{pokemon.name}}</a>
+            <br>
+            <h5 style="color: white;">types</h5>
+            <div class="type" id="{{type}}" *ngFor="let type of pokemon.type">
+
+                <a (click)="GetByType(type)">{{type}}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom"  style="margin-bottom:40px; margin-left: 20%; visibility: {{isVisible}};">
+        <button class="input" style="text-align: center;" type="submit" value="LOAD" (click)="Load()">
+            LOAD MORE
+        </button>
+    </div>
+</div>
